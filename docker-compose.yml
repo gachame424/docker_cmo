@@ -1,0 +1,10 @@
+version: '3'
+services:
+  centos:
+    build: ./centos
+  mysql:
+    build: ./mysql
+    environment:
+      - MYSQL_ALLOW_EMPTY_PASSWORD=yes
+  oracle:
+    build: ./oracle
